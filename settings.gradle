@@ -1,0 +1,2 @@
+include ':app', ':plib'
+project(':plib').projectDir = new File('../Android_PLib/plib')

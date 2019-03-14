@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <ImageView
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:src="@mipmap/apppets_lib"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_title"
+                android:textColor="@color/green"
+                android:textSize="16dp"
+                />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/get_sign"
+                        android:paddingLeft="10dp"
+                        android:text="@string/apk_sign"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_sign"
+                        android:editable="false"
+                        android:hint="@string/hashed_apk_signature"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_sign"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/get_test"
+                        android:paddingLeft="10dp"
+                        android:text="@string/get"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_test"
+                        android:editable="false"
+                        android:hint="@string/test_string"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_test"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/get_and_id"
+                        android:paddingLeft="10dp"
+                        android:text="@string/get"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_and_id"
+                        android:editable="false"
+                        android:hint="@string/android_id"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_and_id"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/get_imei"
+                        android:paddingLeft="10dp"
+                        android:text="@string/get"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_imei"
+                        android:editable="false"
+                        android:hint="@string/imei"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_imei"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/get_phone"
+                        android:paddingLeft="10dp"
+                        android:text="@string/get"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_phone"
+                        android:editable="false"
+                        android:hint="@string/phone_number"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_phone"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/get_sim_serial"
+                        android:paddingLeft="10dp"
+                        android:text="@string/get"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_sim_serial"
+                        android:editable="false"
+                        android:hint="@string/sim_serial"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_sim_serial"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/get_subscriber_id"
+                        android:paddingLeft="10dp"
+                        android:text="@string/get"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_subscriber_id"
+                        android:editable="false"
+                        android:hint="@string/subscriber_id"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_subscriber_id"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/get_last_loc"
+                        android:paddingLeft="10dp"
+                        android:text="@string/get"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_last_loc"
+                        android:editable="false"
+                        android:hint="@string/last_location"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_last_loc"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/get_wifi_info"
+                        android:paddingLeft="10dp"
+                        android:text="@string/get"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_wifi_info"
+                        android:editable="false"
+                        android:hint="@string/wifi_info"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_wifi_info"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"/>
+
+                </TableRow>
+
+                <TableRow>
+
+
+                    <Button
+                        android:id="@+id/get_wifi_mac"
+                        android:paddingLeft="10dp"
+                        android:text="@string/get"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_wifi_mac"
+                        android:editable="false"
+                        android:hint="@string/wifi_mac_address"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_wifi_mac"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+
+                    <Button
+                        android:id="@+id/get_bt_mac"
+                        android:paddingLeft="10dp"
+                        android:text="@string/get"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_bt_mac"
+                        android:editable="false"
+                        android:hint="@string/bluetooth_mac"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_bt_mac"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+
+                    <Button
+                        android:id="@+id/get_contacts"
+                        android:paddingLeft="10dp"
+                        android:text="@string/get"
+                        />
+
+                    <EditText
+                        android:id="@+id/input_contacts"
+                        android:editable="false"
+                        android:hint="@string/contacts"
+                        android:maxWidth="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/send_contacts"
+                        android:paddingRight="10dp"
+                        android:text="@string/send"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clear"
+                />
+
+            <ImageView
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:src="@drawable/dai"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
